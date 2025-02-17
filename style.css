@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0e0e0;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    gap: 20px;
+}
+.glassmorphic {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.glassmorphic:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+.neomorphic {
+    background: #e0e0e0;
+    border-radius: 10px;
+    padding: 15px 30px;
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.neomorphic:active {
+    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+.clickbox {
+    background-color: lightsteelblue;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 1vw;
+    transition: background-color 0.3s, margin 0.3s;
+}
